@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="https://servis.turkiye.gov.tr/services/g2g/kdgm/test/uetdsarizi?wsdl" filename="UdhbUetdsAriziService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://servis.turkiye.gov.tr/ssg/wsdl/UdhbUetdsAriziService?serviceoid=17f00a04acf9ed54db7759881f25ceb4&amp;servdocoid=b9261b6e0d48add1fcbe0d6f46bb95f2" filename="UdhbUetdsAriziService.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

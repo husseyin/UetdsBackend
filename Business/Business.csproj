@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E19C02E3-D22B-47CB-A524-B05B1E897432}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Business</RootNamespace>
+    <AssemblyName>Business</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\UetdsArizi\IAriziGrupService.cs" />
+    <Compile Include="Abstract\UetdsArizi\IAriziPersonelService.cs" />
+    <Compile Include="Abstract\UetdsArizi\IAriziYolcuService.cs" />
+    <Compile Include="Abstract\UetdsArizi\IAriziSeferService.cs" />
+    <Compile Include="Abstract\UetdsEsya\IEsyaSeferService.cs" />
+    <Compile Include="Abstract\UetdsEsya\IEsyaYukService.cs" />
+    <Compile Include="Concrete\UetdsArizi\AriziGrupManager.cs" />
+    <Compile Include="Concrete\UetdsArizi\AriziPersonelManager.cs" />
+    <Compile Include="Concrete\UetdsArizi\AriziYolcuManager.cs" />
+    <Compile Include="Concrete\UetdsArizi\AriziSeferManager.cs" />
+    <Compile Include="Concrete\UetdsEsya\EsyaSeferManager.cs" />
+    <Compile Include="Concrete\UetdsEsya\EsyaYukManager.cs" />
+    <Compile Include="Constans\UetdsAriziBaglanti.cs" />
+    <Compile Include="Constans\UetdsEsyaBaglanti.cs" />
+    <Compile Include="Constans\UetdsYtsKullanici.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\UetdsAriziTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\UetdsEsyaTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://servis.turkiye.gov.tr/services/g2g/kdgm/test/uetdsarizi%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\UetdsAriziTest\</RelPath>
+      <UpdateFromURL>https://servis.turkiye.gov.tr/services/g2g/kdgm/test/uetdsarizi%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Business_UetdsAriziTest_UdhbUetdsAriziService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://servis.turkiye.gov.tr/services/g2g/kdgm/test/uetdsesya%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\UetdsEsyaTest\</RelPath>
+      <UpdateFromURL>https://servis.turkiye.gov.tr/services/g2g/kdgm/test/uetdsesya%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Business_UetdsEsyaServiceReference_UdhbUetdsEsyaWsService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\UetdsAriziTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\UetdsAriziTest\UdhbUetdsAriziService.wsdl" />
+    <None Include="Web References\UetdsAriziTest\UdhbUetdsAriziService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsAriziGrupIslemSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsAriziSeferAraSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsAriziSeferBildirimOzetSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsAriziSeferBildirSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsAriziYolcuIslemSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsEsyaIPListeleSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsFirmaSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsGenelIslemSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsGenelPdfSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsHesKodBlokeEtSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsHesKodBlokeKaldirSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsHesKodCokluSorguPlusSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsHesKodCokluSorguSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsHesKodSorguPlusSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsHesKodSorguSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsKimlikDogrulaSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsMesSorguSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsMuayeneSorguSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsSeyahatIzinKontrolSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsSurucuVizeBasvuruSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsTarifeliSeferBildirSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsVizeBasvuruDetaySonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsVizeBasvuruListeSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsVizeSurucuEkleSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsYolcuBildirimSorguSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsAriziTest\uetdsYtsYolcuCokluSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\testesyaservisi.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\UdhbUetdsEsyaWsService.wsdl" />
+    <None Include="Web References\UetdsEsyaTest\uetdsEsyaIPListeleSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsEsyaParamEsyaTurSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsEsyaParamIptalTuruSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsEsyaParamMuafiyetTuruSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsEsyaParamTasimaTuruSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsEsyaParamTehlikeliMaddeTasimaSekliSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsEsyaParamYukBirimiSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsEsyaSeferDetayiSonucV3.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsEsyaSeferEkleSonucV3.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsEsyaSeferListesiSonucV3.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsEsyaYeniYukEkleSonucV3.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsEsyaYukDetayiSonucV3.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsFirmaSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsGenelIslemSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsGenelPdfSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsMesSorguSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsMuayeneSorguSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsSurucuVizeBasvuruSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsVizeBasvuruDetaySonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsVizeBasvuruListeSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UetdsEsyaTest\uetdsVizeSurucuEkleSonuc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{2d0f3c75-9420-44fe-b426-188172b9c2b3}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{efa14220-db5b-4cb4-8118-acab7c9844a6}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{574a34c7-4833-43d3-9d90-d99b15479ef2}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

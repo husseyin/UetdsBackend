@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://uetds.unetws.udhb.gov.tr/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="UdhbUetdsEsyaWsService" targetNamespace="http://uetds.unetws.udhb.gov.tr/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="https://servis.turkiye.gov.tr/ssg/wsdl/testesyaservisi?serviceoid=21a31312f198e5f142c0a14c20152e1a&amp;servdocoid=c3d416f11b26a2043d0b256d67596f6b" namespace="http://uetds.unetws.udhb.gov.tr/" />
+    </xsd:schema>
+  </types>
+  <message name="iptalTurleri">
+    <part name="parameters" element="tns:iptalTurleri" />
+  </message>
+  <message name="iptalTurleriResponse">
+    <part name="parameters" element="tns:iptalTurleriResponse" />
+  </message>
+  <message name="paramTehlikeliMaddeTasimaSekli">
+    <part name="parameters" element="tns:paramTehlikeliMaddeTasimaSekli" />
+  </message>
+  <message name="paramTehlikeliMaddeTasimaSekliResponse">
+    <part name="parameters" element="tns:paramTehlikeliMaddeTasimaSekliResponse" />
+  </message>
+  <message name="paramYukBirimi">
+    <part name="parameters" element="tns:paramYukBirimi" />
+  </message>
+  <message name="paramYukBirimiResponse">
+    <part name="parameters" element="tns:paramYukBirimiResponse" />
+  </message>
+  <message name="seferIptalTurleri">
+    <part name="parameters" element="tns:seferIptalTurleri" />
+  </message>
+  <message name="seferIptalTurleriResponse">
+    <part name="parameters" element="tns:seferIptalTurleriResponse" />
+  </message>
+  <message name="seferRaporuV3">
+    <part name="parameters" element="tns:seferRaporuV3" />
+  </message>
+  <message name="seferRaporuV3Response">
+    <part name="parameters" element="tns:seferRaporuV3Response" />
+  </message>
+  <message name="seferDetayiV3">
+    <part name="parameters" element="tns:seferDetayiV3" />
+  </message>
+  <message name="seferDetayiV3Response">
+    <part name="parameters" element="tns:seferDetayiV3Response" />
+  </message>
+  <message name="meslekiYeterlilikSorgula">
+    <part name="parameters" element="tns:meslekiYeterlilikSorgula" />
+  </message>
+  <message name="meslekiYeterlilikSorgulaResponse">
+    <part name="parameters" element="tns:meslekiYeterlilikSorgulaResponse" />
+  </message>
+  <message name="aracMuayeneSorgula">
+    <part name="parameters" element="tns:aracMuayeneSorgula" />
+  </message>
+  <message name="aracMuayeneSorgulaResponse">
+    <part name="parameters" element="tns:aracMuayeneSorgulaResponse" />
+  </message>
+  <message name="ipTanimla">
+    <part name="parameters" element="tns:ipTanimla" />
+  </message>
+  <message name="ipTanimlaResponse">
+    <part name="parameters" element="tns:ipTanimlaResponse" />
+  </message>
+  <message name="ipListele">
+    <part name="parameters" element="tns:ipListele" />
+  </message>
+  <message name="ipListeleResponse">
+    <part name="parameters" element="tns:ipListeleResponse" />
+  </message>
+  <message name="ipSil">
+    <part name="parameters" element="tns:ipSil" />
+  </message>
+  <message name="ipSilResponse">
+    <part name="parameters" element="tns:ipSilResponse" />
+  </message>
+  <message name="vizeOnBasvuru">
+    <part name="parameters" element="tns:vizeOnBasvuru" />
+  </message>
+  <message name="vizeOnBasvuruResponse">
+    <part name="parameters" element="tns:vizeOnBasvuruResponse" />
+  </message>
+  <message name="vizeOnBasvuruSurucuEkle">
+    <part name="parameters" element="tns:vizeOnBasvuruSurucuEkle" />
+  </message>
+  <message name="vizeOnBasvuruSurucuEkleResponse">
+    <part name="parameters" element="tns:vizeOnBasvuruSurucuEkleResponse" />
+  </message>
+  <message name="vizeOnBasvuruIptal">
+    <part name="parameters" element="tns:vizeOnBasvuruIptal" />
+  </message>
+  <message name="vizeOnBasvuruIptalResponse">
+    <part name="parameters" element="tns:vizeOnBasvuruIptalResponse" />
+  </message>
+  <message name="vizeOnBasvuruListele">
+    <part name="parameters" element="tns:vizeOnBasvuruListele" />
+  </message>
+  <message name="vizeOnBasvuruListeleResponse">
+    <part name="parameters" element="tns:vizeOnBasvuruListeleResponse" />
+  </message>
+  <message name="vizeOnBasvuruDetay">
+    <part name="parameters" element="tns:vizeOnBasvuruDetay" />
+  </message>
+  <message name="vizeOnBasvuruDetayResponse">
+    <part name="parameters" element="tns:vizeOnBasvuruDetayResponse" />
+  </message>
+  <message name="yeniSeferEkleV3">
+    <part name="parameters" element="tns:yeniSeferEkleV3" />
+  </message>
+  <message name="yeniSeferEkleV3Response">
+    <part name="parameters" element="tns:yeniSeferEkleV3Response" />
+  </message>
+  <message name="paramTasimaTurleri">
+    <part name="parameters" element="tns:paramTasimaTurleri" />
+  </message>
+  <message name="paramTasimaTurleriResponse">
+    <part name="parameters" element="tns:paramTasimaTurleriResponse" />
+  </message>
+  <message name="seferDuzenleV3">
+    <part name="parameters" element="tns:seferDuzenleV3" />
+  </message>
+  <message name="seferDuzenleV3Response">
+    <part name="parameters" element="tns:seferDuzenleV3Response" />
+  </message>
+  <message name="seferIptalEtV3">
+    <part name="parameters" element="tns:seferIptalEtV3" />
+  </message>
+  <message name="seferIptalEtV3Response">
+    <part name="parameters" element="tns:seferIptalEtV3Response" />
+  </message>
+  <message name="seferAktifEtV3">
+    <part name="parameters" element="tns:seferAktifEtV3" />
+  </message>
+  <message name="seferAktifEtV3Response">
+    <part name="parameters" element="tns:seferAktifEtV3Response" />
+  </message>
+  <message name="seferListesiV3">
+    <part name="parameters" element="tns:seferListesiV3" />
+  </message>
+  <message name="seferListesiV3Response">
+    <part name="parameters" element="tns:seferListesiV3Response" />
+  </message>
+  <message name="sefereYukEkleV3">
+    <part name="parameters" element="tns:sefereYukEkleV3" />
+  </message>
+  <message name="sefereYukEkleV3Response">
+    <part name="parameters" element="tns:sefereYukEkleV3Response" />
+  </message>
+  <message name="yukDuzenleV3">
+    <part name="parameters" element="tns:yukDuzenleV3" />
+  </message>
+  <message name="yukDuzenleV3Response">
+    <part name="parameters" element="tns:yukDuzenleV3Response" />
+  </message>
+  <message name="yukIptalEtV3">
+    <part name="parameters" element="tns:yukIptalEtV3" />
+  </message>
+  <message name="yukIptalEtV3Response">
+    <part name="parameters" element="tns:yukIptalEtV3Response" />
+  </message>
+  <message name="yukAktifEtV3">
+    <part name="parameters" element="tns:yukAktifEtV3" />
+  </message>
+  <message name="yukAktifEtV3Response">
+    <part name="parameters" element="tns:yukAktifEtV3Response" />
+  </message>
+  <message name="yukDetayiV3">
+    <part name="parameters" element="tns:yukDetayiV3" />
+  </message>
+  <message name="yukDetayiV3Response">
+    <part name="parameters" element="tns:yukDetayiV3Response" />
+  </message>
+  <message name="paramTehlikeMaddeMuafiyetTurleri">
+    <part name="parameters" element="tns:paramTehlikeMaddeMuafiyetTurleri" />
+  </message>
+  <message name="paramTehlikeMaddeMuafiyetTurleriResponse">
+    <part name="parameters" element="tns:paramTehlikeMaddeMuafiyetTurleriResponse" />
+  </message>
+  <message name="paramYukTuru">
+    <part name="parameters" element="tns:paramYukTuru" />
+  </message>
+  <message name="paramYukTuruResponse">
+    <part name="parameters" element="tns:paramYukTuruResponse" />
+  </message>
+  <message name="servisTest">
+    <part name="parameters" element="tns:servisTest" />
+  </message>
+  <message name="servisTestResponse">
+    <part name="parameters" element="tns:servisTestResponse" />
+  </message>
+  <message name="yetkiBelgesiKontrol">
+    <part name="parameters" element="tns:yetkiBelgesiKontrol" />
+  </message>
+  <message name="yetkiBelgesiKontrolResponse">
+    <part name="parameters" element="tns:yetkiBelgesiKontrolResponse" />
+  </message>
+  <portType name="UdhbUetdsEsyaWsService">
+    <operation name="iptalTurleri">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/iptalTurleri" message="tns:iptalTurleri" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/iptalTurleriResponse" message="tns:iptalTurleriResponse" />
+    </operation>
+    <operation name="paramTehlikeliMaddeTasimaSekli">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/paramTehlikeliMaddeTasimaSekli" message="tns:paramTehlikeliMaddeTasimaSekli" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/paramTehlikeliMaddeTasimaSekliResponse" message="tns:paramTehlikeliMaddeTasimaSekliResponse" />
+    </operation>
+    <operation name="paramYukBirimi">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/paramYukBirimi" message="tns:paramYukBirimi" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/paramYukBirimiResponse" message="tns:paramYukBirimiResponse" />
+    </operation>
+    <operation name="seferIptalTurleri">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/seferIptalTurleri" message="tns:seferIptalTurleri" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/seferIptalTurleriResponse" message="tns:seferIptalTurleriResponse" />
+    </operation>
+    <operation name="seferRaporuV3">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/seferRaporuV3" message="tns:seferRaporuV3" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/seferRaporuV3Response" message="tns:seferRaporuV3Response" />
+    </operation>
+    <operation name="seferDetayiV3">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/seferDetayiV3" message="tns:seferDetayiV3" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/seferDetayiV3Response" message="tns:seferDetayiV3Response" />
+    </operation>
+    <operation name="meslekiYeterlilikSorgula">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/meslekiYeterlilikSorgula" message="tns:meslekiYeterlilikSorgula" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/meslekiYeterlilikSorgulaResponse" message="tns:meslekiYeterlilikSorgulaResponse" />
+    </operation>
+    <operation name="aracMuayeneSorgula">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/aracMuayeneSorgula" message="tns:aracMuayeneSorgula" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/aracMuayeneSorgulaResponse" message="tns:aracMuayeneSorgulaResponse" />
+    </operation>
+    <operation name="ipTanimla">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/ipTanimla" message="tns:ipTanimla" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/ipTanimlaResponse" message="tns:ipTanimlaResponse" />
+    </operation>
+    <operation name="ipListele">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/ipListele" message="tns:ipListele" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/ipListeleResponse" message="tns:ipListeleResponse" />
+    </operation>
+    <operation name="ipSil">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/ipSil" message="tns:ipSil" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/ipSilResponse" message="tns:ipSilResponse" />
+    </operation>
+    <operation name="vizeOnBasvuru">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/vizeOnBasvuru" message="tns:vizeOnBasvuru" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/vizeOnBasvuruResponse" message="tns:vizeOnBasvuruResponse" />
+    </operation>
+    <operation name="vizeOnBasvuruSurucuEkle">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/vizeOnBasvuruSurucuEkle" message="tns:vizeOnBasvuruSurucuEkle" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/vizeOnBasvuruSurucuEkleResponse" message="tns:vizeOnBasvuruSurucuEkleResponse" />
+    </operation>
+    <operation name="vizeOnBasvuruIptal">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/vizeOnBasvuruIptal" message="tns:vizeOnBasvuruIptal" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/vizeOnBasvuruIptalResponse" message="tns:vizeOnBasvuruIptalResponse" />
+    </operation>
+    <operation name="vizeOnBasvuruListele">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/vizeOnBasvuruListele" message="tns:vizeOnBasvuruListele" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/vizeOnBasvuruListeleResponse" message="tns:vizeOnBasvuruListeleResponse" />
+    </operation>
+    <operation name="vizeOnBasvuruDetay">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/vizeOnBasvuruDetay" message="tns:vizeOnBasvuruDetay" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/vizeOnBasvuruDetayResponse" message="tns:vizeOnBasvuruDetayResponse" />
+    </operation>
+    <operation name="yeniSeferEkleV3">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/yeniSeferEkleV3" message="tns:yeniSeferEkleV3" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/yeniSeferEkleV3Response" message="tns:yeniSeferEkleV3Response" />
+    </operation>
+    <operation name="paramTasimaTurleri">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/paramTasimaTurleri" message="tns:paramTasimaTurleri" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/paramTasimaTurleriResponse" message="tns:paramTasimaTurleriResponse" />
+    </operation>
+    <operation name="seferDuzenleV3">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/seferDuzenleV3" message="tns:seferDuzenleV3" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/seferDuzenleV3Response" message="tns:seferDuzenleV3Response" />
+    </operation>
+    <operation name="seferIptalEtV3">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/seferIptalEtV3" message="tns:seferIptalEtV3" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/seferIptalEtV3Response" message="tns:seferIptalEtV3Response" />
+    </operation>
+    <operation name="seferAktifEtV3">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/seferAktifEtV3" message="tns:seferAktifEtV3" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/seferAktifEtV3Response" message="tns:seferAktifEtV3Response" />
+    </operation>
+    <operation name="seferListesiV3">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/seferListesiV3" message="tns:seferListesiV3" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/seferListesiV3Response" message="tns:seferListesiV3Response" />
+    </operation>
+    <operation name="sefereYukEkleV3">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/sefereYukEkleV3" message="tns:sefereYukEkleV3" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/sefereYukEkleV3Response" message="tns:sefereYukEkleV3Response" />
+    </operation>
+    <operation name="yukDuzenleV3">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/yukDuzenleV3" message="tns:yukDuzenleV3" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/yukDuzenleV3Response" message="tns:yukDuzenleV3Response" />
+    </operation>
+    <operation name="yukIptalEtV3">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/yukIptalEtV3" message="tns:yukIptalEtV3" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/yukIptalEtV3Response" message="tns:yukIptalEtV3Response" />
+    </operation>
+    <operation name="yukAktifEtV3">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/yukAktifEtV3" message="tns:yukAktifEtV3" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/yukAktifEtV3Response" message="tns:yukAktifEtV3Response" />
+    </operation>
+    <operation name="yukDetayiV3">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/yukDetayiV3" message="tns:yukDetayiV3" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/yukDetayiV3Response" message="tns:yukDetayiV3Response" />
+    </operation>
+    <operation name="paramTehlikeMaddeMuafiyetTurleri">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/paramTehlikeMaddeMuafiyetTurleri" message="tns:paramTehlikeMaddeMuafiyetTurleri" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/paramTehlikeMaddeMuafiyetTurleriResponse" message="tns:paramTehlikeMaddeMuafiyetTurleriResponse" />
+    </operation>
+    <operation name="paramYukTuru">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/paramYukTuru" message="tns:paramYukTuru" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/paramYukTuruResponse" message="tns:paramYukTuruResponse" />
+    </operation>
+    <operation name="servisTest">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/servisTestRequest" message="tns:servisTest" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/servisTestResponse" message="tns:servisTestResponse" />
+    </operation>
+    <operation name="yetkiBelgesiKontrol">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsesya/yetkiBelgesiKontrol" message="tns:yetkiBelgesiKontrol" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsEsyaWsService/yetkiBelgesiKontrolResponse" message="tns:yetkiBelgesiKontrolResponse" />
+    </operation>
+  </portType>
+  <binding name="UdhbUetdsEsyaWsServicePortBinding" type="tns:UdhbUetdsEsyaWsService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="iptalTurleri">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/iptalTurleri" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="paramTehlikeliMaddeTasimaSekli">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/paramTehlikeliMaddeTasimaSekli" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="paramYukBirimi">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/paramYukBirimi" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="seferIptalTurleri">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/seferIptalTurleri" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="seferRaporuV3">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/seferRaporuV3" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="seferDetayiV3">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/seferDetayiV3" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="meslekiYeterlilikSorgula">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/meslekiYeterlilikSorgula" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="aracMuayeneSorgula">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/aracMuayeneSorgula" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ipTanimla">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/ipTanimla" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ipListele">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/ipListele" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ipSil">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/ipSil" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="vizeOnBasvuru">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/vizeOnBasvuru" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="vizeOnBasvuruSurucuEkle">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/vizeOnBasvuruSurucuEkle" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="vizeOnBasvuruIptal">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/vizeOnBasvuruIptal" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="vizeOnBasvuruListele">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/vizeOnBasvuruListele" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="vizeOnBasvuruDetay">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/vizeOnBasvuruDetay" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="yeniSeferEkleV3">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/yeniSeferEkleV3" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="paramTasimaTurleri">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/paramTasimaTurleri" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="seferDuzenleV3">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/seferDuzenleV3" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="seferIptalEtV3">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/seferIptalEtV3" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="seferAktifEtV3">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/seferAktifEtV3" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="seferListesiV3">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/seferListesiV3" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="sefereYukEkleV3">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/sefereYukEkleV3" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="yukDuzenleV3">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/yukDuzenleV3" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="yukIptalEtV3">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/yukIptalEtV3" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="yukAktifEtV3">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/yukAktifEtV3" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="yukDetayiV3">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/yukDetayiV3" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="paramTehlikeMaddeMuafiyetTurleri">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/paramTehlikeMaddeMuafiyetTurleri" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="paramYukTuru">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/paramYukTuru" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="servisTest">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="yetkiBelgesiKontrol">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsesya/yetkiBelgesiKontrol" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="UdhbUetdsEsyaWsService">
+    <port name="UdhbUetdsEsyaWsServicePort" binding="tns:UdhbUetdsEsyaWsServicePortBinding">
+      <soap:address location="https://servis.turkiye.gov.tr/services/g2g/kdgm/test/uetdsesya" />
+    </port>
+  </service>
+</definitions>

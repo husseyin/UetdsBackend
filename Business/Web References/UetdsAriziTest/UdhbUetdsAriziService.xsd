@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://uetds.unetws.udhb.gov.tr/" targetNamespace="http://uetds.unetws.udhb.gov.tr/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="aracMuayeneSorgula" type="tns:aracMuayeneSorgula" />
+  <xs:element name="aracMuayeneSorgulaResponse" type="tns:aracMuayeneSorgulaResponse" />
+  <xs:element name="bildirimOzeti" type="tns:bildirimOzeti" />
+  <xs:element name="bildirimOzetiResponse" type="tns:bildirimOzetiResponse" />
+  <xs:element name="cokluHesKoduKontrolEt" type="tns:cokluHesKoduKontrolEt" />
+  <xs:element name="cokluHesKoduKontrolEtPlus" type="tns:cokluHesKoduKontrolEtPlus" />
+  <xs:element name="cokluHesKoduKontrolEtPlusResponse" type="tns:cokluHesKoduKontrolEtPlusResponse" />
+  <xs:element name="cokluHesKoduKontrolEtResponse" type="tns:cokluHesKoduKontrolEtResponse" />
+  <xs:element name="hesKoduBlokeEt" type="tns:hesKoduBlokeEt" />
+  <xs:element name="hesKoduBlokeEtResponse" type="tns:hesKoduBlokeEtResponse" />
+  <xs:element name="hesKoduBlokeKaldir" type="tns:hesKoduBlokeKaldir" />
+  <xs:element name="hesKoduBlokeKaldirResponse" type="tns:hesKoduBlokeKaldirResponse" />
+  <xs:element name="hesKoduKontrolEt" type="tns:hesKoduKontrolEt" />
+  <xs:element name="hesKoduKontrolEtPlus" type="tns:hesKoduKontrolEtPlus" />
+  <xs:element name="hesKoduKontrolEtPlusResponse" type="tns:hesKoduKontrolEtPlusResponse" />
+  <xs:element name="hesKoduKontrolEtResponse" type="tns:hesKoduKontrolEtResponse" />
+  <xs:element name="ipListele" type="tns:ipListele" />
+  <xs:element name="ipListeleResponse" type="tns:ipListeleResponse" />
+  <xs:element name="ipSil" type="tns:ipSil" />
+  <xs:element name="ipSilResponse" type="tns:ipSilResponse" />
+  <xs:element name="ipTanimla" type="tns:ipTanimla" />
+  <xs:element name="ipTanimlaResponse" type="tns:ipTanimlaResponse" />
+  <xs:element name="kimlikDogrulama" type="tns:kimlikDogrulama" />
+  <xs:element name="kimlikDogrulamaResponse" type="tns:kimlikDogrulamaResponse" />
+  <xs:element name="kullaniciKontrol" type="tns:kullaniciKontrol" />
+  <xs:element name="kullaniciKontrolResponse" type="tns:kullaniciKontrolResponse" />
+  <xs:element name="meslekiYeterlilikSorgula" type="tns:meslekiYeterlilikSorgula" />
+  <xs:element name="meslekiYeterlilikSorgulaResponse" type="tns:meslekiYeterlilikSorgulaResponse" />
+  <xs:element name="personelEkle" type="tns:personelEkle" />
+  <xs:element name="personelEkleResponse" type="tns:personelEkleResponse" />
+  <xs:element name="personelIptal" type="tns:personelIptal" />
+  <xs:element name="personelIptalResponse" type="tns:personelIptalResponse" />
+  <xs:element name="seferAktif" type="tns:seferAktif" />
+  <xs:element name="seferAktifResponse" type="tns:seferAktifResponse" />
+  <xs:element name="seferBildirimListele" type="tns:seferBildirimListele" />
+  <xs:element name="seferBildirimListeleResponse" type="tns:seferBildirimListeleResponse" />
+  <xs:element name="seferDetayCiktisiAl" type="tns:seferDetayCiktisiAl" />
+  <xs:element name="seferDetayCiktisiAlResponse" type="tns:seferDetayCiktisiAlResponse" />
+  <xs:element name="seferEkle" type="tns:seferEkle" />
+  <xs:element name="seferEkleResponse" type="tns:seferEkleResponse" />
+  <xs:element name="seferGrupEkle" type="tns:seferGrupEkle" />
+  <xs:element name="seferGrupEkleResponse" type="tns:seferGrupEkleResponse" />
+  <xs:element name="seferGrupGuncelle" type="tns:seferGrupGuncelle" />
+  <xs:element name="seferGrupGuncelleResponse" type="tns:seferGrupGuncelleResponse" />
+  <xs:element name="seferGrupIptal" type="tns:seferGrupIptal" />
+  <xs:element name="seferGrupIptalResponse" type="tns:seferGrupIptalResponse" />
+  <xs:element name="seferGrupListesi" type="tns:seferGrupListesi" />
+  <xs:element name="seferGrupListesiResponse" type="tns:seferGrupListesiResponse" />
+  <xs:element name="seferGuncelle" type="tns:seferGuncelle" />
+  <xs:element name="seferGuncelleResponse" type="tns:seferGuncelleResponse" />
+  <xs:element name="seferIptal" type="tns:seferIptal" />
+  <xs:element name="seferIptalResponse" type="tns:seferIptalResponse" />
+  <xs:element name="seferPlakaDegistir" type="tns:seferPlakaDegistir" />
+  <xs:element name="seferPlakaDegistirResponse" type="tns:seferPlakaDegistirResponse" />
+  <xs:element name="servisTestResponse" nillable="true" type="xs:string" />
+  <xs:element name="seyahatIzinKontrol" type="tns:seyahatIzinKontrol" />
+  <xs:element name="seyahatIzinKontrolResponse" type="tns:seyahatIzinKontrolResponse" />
+  <xs:element name="testMsj1" nillable="true" type="xs:string" />
+  <xs:element name="vizeOnBasvuru" type="tns:vizeOnBasvuru" />
+  <xs:element name="vizeOnBasvuruDetay" type="tns:vizeOnBasvuruDetay" />
+  <xs:element name="vizeOnBasvuruDetayResponse" type="tns:vizeOnBasvuruDetayResponse" />
+  <xs:element name="vizeOnBasvuruIptal" type="tns:vizeOnBasvuruIptal" />
+  <xs:element name="vizeOnBasvuruIptalResponse" type="tns:vizeOnBasvuruIptalResponse" />
+  <xs:element name="vizeOnBasvuruListele" type="tns:vizeOnBasvuruListele" />
+  <xs:element name="vizeOnBasvuruListeleResponse" type="tns:vizeOnBasvuruListeleResponse" />
+  <xs:element name="vizeOnBasvuruResponse" type="tns:vizeOnBasvuruResponse" />
+  <xs:element name="vizeOnBasvuruSurucuEkle" type="tns:vizeOnBasvuruSurucuEkle" />
+  <xs:element name="vizeOnBasvuruSurucuEkleResponse" type="tns:vizeOnBasvuruSurucuEkleResponse" />
+  <xs:element name="yetkiBelgesiKontrol" type="tns:yetkiBelgesiKontrol" />
+  <xs:element name="yetkiBelgesiKontrolResponse" type="tns:yetkiBelgesiKontrolResponse" />
+  <xs:element name="yolcuBagajEkle" type="tns:yolcuBagajEkle" />
+  <xs:element name="yolcuBagajEkleResponse" type="tns:yolcuBagajEkleResponse" />
+  <xs:element name="yolcuBagajIptal" type="tns:yolcuBagajIptal" />
+  <xs:element name="yolcuBagajIptalResponse" type="tns:yolcuBagajIptalResponse" />
+  <xs:element name="yolcuBildirimSorgula" type="tns:yolcuBildirimSorgula" />
+  <xs:element name="yolcuBildirimSorgulaResponse" type="tns:yolcuBildirimSorgulaResponse" />
+  <xs:element name="yolcuEkle" type="tns:yolcuEkle" />
+  <xs:element name="yolcuEkleCoklu" type="tns:yolcuEkleCoklu" />
+  <xs:element name="yolcuEkleCokluResponse" type="tns:yolcuEkleCokluResponse" />
+  <xs:element name="yolcuEkleResponse" type="tns:yolcuEkleResponse" />
+  <xs:element name="yolcuGelmeyenBildir" type="tns:yolcuGelmeyenBildir" />
+  <xs:element name="yolcuGelmeyenBildirResponse" type="tns:yolcuGelmeyenBildirResponse" />
+  <xs:element name="yolcuIptal" type="tns:yolcuIptal" />
+  <xs:element name="yolcuIptalResponse" type="tns:yolcuIptalResponse" />
+  <xs:element name="yolcuIptalUetdsYolcuRefNoIle" type="tns:yolcuIptalUetdsYolcuRefNoIle" />
+  <xs:element name="yolcuIptalUetdsYolcuRefNoIleResponse" type="tns:yolcuIptalUetdsYolcuRefNoIleResponse" />
+  <xs:complexType name="personelEkle">
+    <xs:sequence>
+      <xs:element name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element name="uetdsSeferReferansNo" type="xs:long" />
+      <xs:element maxOccurs="unbounded" name="seferPersonelBilgileriInput" type="tns:uetdsAriziSeferPersonelBilgileriInput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsYtsUser">
+    <xs:sequence>
+      <xs:element name="kullaniciAdi" type="xs:string" />
+      <xs:element name="sifre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsAriziSeferPersonelBilgileriInput">
+    <xs:sequence>
+      <xs:element name="turKodu" type="xs:int" />
+      <xs:element name="uyrukUlke" type="xs:string" />
+      <xs:element name="tcKimlikPasaportNo" type="xs:string" />
+      <xs:element name="cinsiyet" type="xs:string" />
+      <xs:element name="adi" type="xs:string" />
+      <xs:element name="soyadi" type="xs:string" />
+      <xs:element minOccurs="0" name="telefon" type="xs:string" />
+      <xs:element minOccurs="0" name="adres" type="xs:string" />
+      <xs:element minOccurs="0" name="hesKodu" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="personelEkleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsGenelIslemSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsGenelIslemSonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="kullaniciKontrol">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="kullaniciAdi" type="xs:string" />
+      <xs:element minOccurs="0" name="sifre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="kullaniciKontrolResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsFirmaSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsFirmaSonuc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="belgeGecerlilikTarihi" type="xs:string" />
+      <xs:element minOccurs="0" name="belgeNo" type="xs:string" />
+      <xs:element minOccurs="0" name="belgeTuru" type="xs:string" />
+      <xs:element minOccurs="0" name="firmaUnvan" type="xs:string" />
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" name="unetNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hesKoduKontrolEt">
+    <xs:sequence>
+      <xs:element name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element name="hesKodu" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hesKoduKontrolEtResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsHesKodSorguSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsHesKodSorguSonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" name="sorgulamaSonucu" type="tns:hesKodSorguSonucu" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hesKodSorguSonucu">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="gecerlilikTarihi" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="durumAciklama" type="xs:string" />
+      <xs:element minOccurs="0" name="kimlikBilgisi" type="xs:string" />
+      <xs:element minOccurs="0" name="hesKodu" type="xs:string" />
+      <xs:element name="logHesId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hesKoduKontrolEtPlus">
+    <xs:sequence>
+      <xs:element name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element name="hesKodu" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hesKoduKontrolEtPlusResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsHesKodSorguPlusSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsHesKodSorguPlusSonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" name="sorgulamaSonucu" type="tns:hesKodSorguPlusSonucu" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hesKodSorguPlusSonucu">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="gecerlilikTarihi" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="sonNegatifTestTarihi" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="durumAciklama" type="xs:string" />
+      <xs:element minOccurs="0" name="kimlikBilgisi" type="xs:string" />
+      <xs:element minOccurs="0" name="adi" type="xs:string" />
+      <xs:element minOccurs="0" name="soyadi" type="xs:string" />
+      <xs:element minOccurs="0" name="asiliMi" type="xs:boolean" />
+      <xs:element minOccurs="0" name="bagisiklikVarMi" type="xs:boolean" />
+      <xs:element minOccurs="0" name="hesKodu" type="xs:string" />
+      <xs:element name="logHesId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="yolcuIptal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+      <xs:element minOccurs="0" name="iptalYolcu" type="tns:uetdsAriziYolcuIptalInput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsAriziYolcuIptalInput">
+    <xs:sequence>
+      <xs:element name="koltukNo" type="xs:string" />
+      <xs:element name="yolcuTCKimlikPasaportNo" type="xs:string" />
+      <xs:element minOccurs="0" name="iptalAciklama" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="yolcuIptalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsGenelIslemSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vizeOnBasvuru">
+    <xs:sequence>
+      <xs:element name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element name="vizeBasvuruInput" type="tns:uetdsSurucuVizeBasvuruInput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsSurucuVizeBasvuruInput">
+    <xs:sequence>
+      <xs:element name="ulkeKodu" type="xs:string" />
+      <xs:element maxOccurs="unbounded" name="surucuBilgileri" type="tns:uetdsVizeSurucuBilgileri" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsVizeSurucuBilgileri">
+    <xs:sequence>
+      <xs:element name="tcKimlikNo" type="xs:string" />
+      <xs:element name="pasaportNo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vizeOnBasvuruResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsSurucuVizeBasvuruSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsSurucuVizeBasvuruSonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" name="vizeOnBasvuruNo" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="islemSonuc" nillable="true" type="tns:uetdsVizeSurucuSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsVizeSurucuSonuc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="kimlikNo" type="xs:string" />
+      <xs:element name="sira" type="xs:int" />
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cokluHesKoduKontrolEt">
+    <xs:sequence>
+      <xs:element name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element maxOccurs="unbounded" name="hesKoduListesi" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cokluHesKoduKontrolEtResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsHesKodCokluSorguSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsHesKodCokluSorguSonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="sorgulamaSonuclari" nillable="true" type="tns:hesKodSorguSonucu" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cokluHesKoduKontrolEtPlus">
+    <xs:sequence>
+      <xs:element name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element maxOccurs="unbounded" name="hesKoduListesi" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cokluHesKoduKontrolEtPlusResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsHesKodCokluSorguPlusSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsHesKodCokluSorguPlusSonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="sorgulamaSonuclari" nillable="true" type="tns:hesKodSorguPlusSonucu" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="yolcuEkleCoklu">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="yolcuBilgileri" type="tns:uetdsAriziSeferYolcuBilgileriInput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsAriziSeferYolcuBilgileriInput">
+    <xs:sequence>
+      <xs:element name="uyrukUlke" type="xs:string" />
+      <xs:element name="tcKimlikPasaportNo" type="xs:string" />
+      <xs:element minOccurs="0" name="cinsiyet" type="xs:string" />
+      <xs:element name="adi" type="xs:string" />
+      <xs:element name="soyadi" type="xs:string" />
+      <xs:element name="koltukNo" type="xs:string" />
+      <xs:element minOccurs="0" name="telefonNo" type="xs:string" />
+      <xs:element name="grupId" type="xs:long" />
+      <xs:element minOccurs="0" name="hesKodu" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="yolcuEkleCokluResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsYtsYolcuCokluSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsYtsYolcuCokluSonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="uetdsYolcuSonuc" nillable="true" type="tns:uetdsYolcuSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsYolcuSonuc">
+    <xs:sequence>
+      <xs:element name="sira" type="xs:int" />
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" name="uetdsBiletRefNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vizeOnBasvuruIptal">
+    <xs:sequence>
+      <xs:element name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element name="vizeOnBasvuruNo" type="xs:string" />
+      <xs:element name="aciklama" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vizeOnBasvuruIptalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsGenelIslemSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="personelIptal">
+    <xs:sequence>
+      <xs:element name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element name="iptalPersonelInput" type="tns:uetdsPersonelIptalInput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsPersonelIptalInput">
+    <xs:sequence>
+      <xs:element name="personelTCKimlikPasaportNo" type="xs:string" />
+      <xs:element minOccurs="0" name="iptalAciklama" type="xs:string" />
+      <xs:element name="uetdsSeferReferansNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="personelIptalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsGenelIslemSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="kimlikDogrulama">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="kimlikBilgileriInput" type="tns:uetdsKimlikBilgileriInput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsKimlikBilgileriInput">
+    <xs:sequence>
+      <xs:element name="kimlikNo" type="xs:string" />
+      <xs:element name="adi" type="xs:string" />
+      <xs:element name="soyadi" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="kimlikDogrulamaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsKimlikDogrulaSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsKimlikDogrulaSonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element name="isUygun" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="yolcuEkle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+      <xs:element minOccurs="0" name="seferYolcuBilgileriInput" type="tns:uetdsAriziSeferYolcuBilgileriInput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="yolcuEkleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsAriziYolcuIslemSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsAriziYolcuIslemSonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" name="uetdsYolcuRefNo" type="xs:string" />
+      <xs:element minOccurs="0" name="seferBilgisi" type="tns:uetdsAriziSeferBilgileri" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="yolcuList" nillable="true" type="tns:uetdsAriziSeferYolcuListesi" />
+      <xs:element minOccurs="0" name="yolcuDetay" type="tns:uetdsAriziSeferYolcuByYolcuRefNo" />
+      <xs:element minOccurs="0" name="grupDetay" type="tns:cstUetdsAriziGrupDetay" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsAriziSeferBilgileri">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="aracTel" type="xs:string" />
+      <xs:element minOccurs="0" name="bakSeferNo" type="xs:string" />
+      <xs:element minOccurs="0" name="belgeNo" type="xs:string" />
+      <xs:element minOccurs="0" name="belgeTuru" type="xs:string" />
+      <xs:element minOccurs="0" name="durum" type="xs:string" />
+      <xs:element name="durumKodu" type="xs:int" />
+      <xs:element name="durumKoduNull" type="xs:boolean" />
+      <xs:element minOccurs="0" name="firmaSeferNo" type="xs:string" />
+      <xs:element minOccurs="0" name="plaka" type="xs:string" />
+      <xs:element minOccurs="0" name="seferAciklama" type="xs:string" />
+      <xs:element minOccurs="0" name="seferBasSaati" type="xs:string" />
+      <xs:element minOccurs="0" name="seferBasTarihi" type="xs:string" />
+      <xs:element minOccurs="0" name="seferBitSaati" type="xs:string" />
+      <xs:element minOccurs="0" name="seferBitTarihi" type="xs:string" />
+      <xs:element minOccurs="0" name="sonYolcuBildirimTarihi" type="xs:string" />
+      <xs:element minOccurs="0" name="unetNo" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsAriziSeferYolcuListesi">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="adi" type="xs:string" />
+      <xs:element minOccurs="0" name="binisYeriAciklama" type="xs:string" />
+      <xs:element minOccurs="0" name="cinsiyet" type="xs:string" />
+      <xs:element minOccurs="0" name="durumAciklama" type="xs:string" />
+      <xs:element minOccurs="0" name="durumKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="grupAdi" type="xs:string" />
+      <xs:element minOccurs="0" name="hesKod" type="xs:string" />
+      <xs:element minOccurs="0" name="inisYeriAciklama" type="xs:string" />
+      <xs:element minOccurs="0" name="koltukNo" type="xs:string" />
+      <xs:element minOccurs="0" name="soyadi" type="xs:string" />
+      <xs:element minOccurs="0" name="tckimlikno" type="xs:string" />
+      <xs:element minOccurs="0" name="telefonNo" type="xs:string" />
+      <xs:element minOccurs="0" name="uetdsBiletRefNo" type="xs:long" />
+      <xs:element minOccurs="0" name="ulkeKodu" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsAriziSeferYolcuByYolcuRefNo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="binisYerAciklama" type="xs:string" />
+      <xs:element minOccurs="0" name="cinsiyet" type="xs:string" />
+      <xs:element minOccurs="0" name="durum" type="xs:string" />
+      <xs:element minOccurs="0" name="grupId" type="xs:long" />
+      <xs:element minOccurs="0" name="inisYerAciklama" type="xs:string" />
+      <xs:element minOccurs="0" name="iptalAciklama" type="xs:string" />
+      <xs:element minOccurs="0" name="koltukNo" type="xs:string" />
+      <xs:element minOccurs="0" name="seferYolcuRefNo" type="xs:long" />
+      <xs:element minOccurs="0" name="tarih" type="xs:string" />
+      <xs:element minOccurs="0" name="tcKimlikPasaportNo" type="xs:string" />
+      <xs:element minOccurs="0" name="telefon" type="xs:string" />
+      <xs:element minOccurs="0" name="ulkeKodu" type="xs:string" />
+      <xs:element minOccurs="0" name="yolcuAdi" type="xs:string" />
+      <xs:element minOccurs="0" name="yolcuSoyadi" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cstUetdsAriziGrupDetay">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="durumAciklama" type="xs:string" />
+      <xs:element name="durumKodu" type="xs:int" />
+      <xs:element name="durumKoduNull" type="xs:boolean" />
+      <xs:element minOccurs="0" name="grupAciklama" type="xs:string" />
+      <xs:element minOccurs="0" name="grupAdi" type="xs:string" />
+      <xs:element minOccurs="0" name="grupId" type="xs:long" />
+      <xs:element minOccurs="0" name="seferBasSaati" type="xs:string" />
+      <xs:element minOccurs="0" name="seferBasTarihi" type="xs:string" />
+      <xs:element minOccurs="0" name="seferBasYeri" type="xs:string" />
+      <xs:element minOccurs="0" name="seferBitSaati" type="xs:string" />
+      <xs:element minOccurs="0" name="seferBitTarihi" type="xs:string" />
+      <xs:element minOccurs="0" name="seferBitYeri" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferPlakaDegistir">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+      <xs:element minOccurs="0" name="tasitPlakaNo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferPlakaDegistirResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsGenelIslemSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferGrupListesi">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferGrupListesiResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsAriziGrupIslemSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsAriziGrupIslemSonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" name="uetdsGrupRefNo" type="xs:string" />
+      <xs:element minOccurs="0" name="seferBilgisi" type="tns:uetdsAriziSeferBilgileri" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="grupListe" nillable="true" type="tns:cstUetdsAriziGrupListe" />
+      <xs:element minOccurs="0" name="grupDetay" type="tns:cstUetdsAriziGrupDetay" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cstUetdsAriziGrupListe">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="baslangicIlAdi" type="xs:string" />
+      <xs:element minOccurs="0" name="baslangicIlId" type="xs:long" />
+      <xs:element minOccurs="0" name="baslangicIlceAdi" type="xs:string" />
+      <xs:element minOccurs="0" name="baslangicIlceId" type="xs:long" />
+      <xs:element minOccurs="0" name="baslangicUlkeAdi" type="xs:string" />
+      <xs:element minOccurs="0" name="baslangicUlkeKodu" type="xs:string" />
+      <xs:element minOccurs="0" name="baslangicYeri" type="xs:string" />
+      <xs:element minOccurs="0" name="bitisIlAdi" type="xs:string" />
+      <xs:element minOccurs="0" name="bitisIlId" type="xs:long" />
+      <xs:element minOccurs="0" name="bitisIlceAdi" type="xs:string" />
+      <xs:element minOccurs="0" name="bitisIlceId" type="xs:long" />
+      <xs:element minOccurs="0" name="bitisUlkeAdi" type="xs:string" />
+      <xs:element minOccurs="0" name="bitisUlkeKodu" type="xs:string" />
+      <xs:element minOccurs="0" name="bitisYeri" type="xs:string" />
+      <xs:element minOccurs="0" name="grupAciklama" type="xs:string" />
+      <xs:element minOccurs="0" name="grupAdi" type="xs:string" />
+      <xs:element minOccurs="0" name="grupId" type="xs:long" />
+      <xs:element minOccurs="0" name="seferBasSaati" type="xs:string" />
+      <xs:element minOccurs="0" name="seferBasTarihi" type="xs:string" />
+      <xs:element minOccurs="0" name="seferBasYeri" type="xs:string" />
+      <xs:element minOccurs="0" name="seferBitSaati" type="xs:string" />
+      <xs:element minOccurs="0" name="seferBitTarihi" type="xs:string" />
+      <xs:element minOccurs="0" name="seferBitYeri" type="xs:string" />
+      <xs:element minOccurs="0" name="ucret" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bildirimOzeti">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bildirimOzetiResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsAriziSeferBildirimOzetSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsAriziSeferBildirimOzetSonuc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="seferTarihi" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="firmaUnvan" type="xs:string" />
+      <xs:element minOccurs="0" name="firmaSeferNo" type="xs:string" />
+      <xs:element minOccurs="0" name="seferSaati" type="xs:string" />
+      <xs:element minOccurs="0" name="seferDurumKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="seferDurumAciklama" type="xs:string" />
+      <xs:element minOccurs="0" name="sonYolcuBildirimTarihi" type="xs:string" />
+      <xs:element minOccurs="0" name="belgeNo" type="xs:string" />
+      <xs:element minOccurs="0" name="belgeTuru" type="xs:string" />
+      <xs:element minOccurs="0" name="bildirilenYolcuSayisi" type="xs:long" />
+      <xs:element minOccurs="0" name="iptalYolcuSayisi" type="xs:long" />
+      <xs:element minOccurs="0" name="gelmeyenYolcuSayisi" type="xs:long" />
+      <xs:element minOccurs="0" name="personelKayitSayisi" type="xs:long" />
+      <xs:element minOccurs="0" name="iptalPersonelKayitSayisi" type="xs:long" />
+      <xs:element minOccurs="0" name="bagajAdedi" type="xs:long" />
+      <xs:element minOccurs="0" name="iptalBagajAdedi" type="xs:long" />
+      <xs:element minOccurs="0" name="aracPlaka" type="xs:string" />
+      <xs:element minOccurs="0" name="seferAciklama" type="xs:string" />
+      <xs:element minOccurs="0" name="aracTelefonu" type="xs:string" />
+      <xs:element minOccurs="0" name="seferBasYeri" type="xs:string" />
+      <xs:element minOccurs="0" name="seferBitYeri" type="xs:string" />
+      <xs:element minOccurs="0" name="seferBitTarihi" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="seferBitSaati" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="grupListesi" nillable="true" type="tns:cstUetdsAriziGrupListe" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ariziPersonelListesi" nillable="true" type="tns:uetdsAriziSeferPersonelListesi" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ariziYolcuListesi" nillable="true" type="tns:uetdsAriziSeferYolcuListesi" />
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsAriziSeferPersonelListesi">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="adi" type="xs:string" />
+      <xs:element minOccurs="0" name="adres" type="xs:string" />
+      <xs:element minOccurs="0" name="cinsiyet" type="xs:string" />
+      <xs:element minOccurs="0" name="durumAciklama" type="xs:string" />
+      <xs:element minOccurs="0" name="hesKod" type="xs:string" />
+      <xs:element minOccurs="0" name="personelTuru" type="xs:string" />
+      <xs:element minOccurs="0" name="seferPersonelId" type="xs:long" />
+      <xs:element minOccurs="0" name="soyadi" type="xs:string" />
+      <xs:element minOccurs="0" name="tckimlikno" type="xs:string" />
+      <xs:element minOccurs="0" name="telefon" type="xs:string" />
+      <xs:element minOccurs="0" name="ulke" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seyahatIzinKontrol">
+    <xs:sequence>
+      <xs:element name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element name="tcKimlikNo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seyahatIzinKontrolResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsSeyahatIzinKontrolSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsSeyahatIzinKontrolSonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="kayitlar" nillable="true" type="tns:seyahatIzinKontrolApiDataResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seyahatIzinKontrolApiDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ad" type="xs:string" />
+      <xs:element minOccurs="0" name="gidilecekAdres" type="xs:string" />
+      <xs:element minOccurs="0" name="izinBaslangicTarihi" type="xs:string" />
+      <xs:element minOccurs="0" name="soyad" type="xs:string" />
+      <xs:element minOccurs="0" name="tcKimlikNo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="aracMuayeneSorgula">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="plaka" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="aracMuayeneSorgulaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsMuayeneSorguSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsMuayeneSorguSonuc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="muayeneGecerlilikTarihi" type="xs:string" />
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ipListele">
+    <xs:sequence>
+      <xs:element name="wsuser" type="tns:uetdsYtsUser" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ipListeleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsEsyaIPListeleSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsEsyaIPListeleSonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ipListesi" nillable="true" type="tns:wsUetdsEsyaIPListesi" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="wsUetdsEsyaIPListesi">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:string" />
+      <xs:element minOccurs="0" name="ipBaslangic" type="xs:string" />
+      <xs:element minOccurs="0" name="ipBitis" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="meslekiYeterlilikSorgula">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="kimlikNo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="meslekiYeterlilikSorgulaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsMesSorguSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsMesSorguSonuc">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="belgeListesi" nillable="true" type="xs:string" />
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="yolcuBildirimSorgula">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+      <xs:element minOccurs="0" name="seferYolcuRefNo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="yolcuBildirimSorgulaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsYolcuBildirimSorguSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsYolcuBildirimSorguSonuc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="seferYolcuBilgi" type="tns:uetdsAriziSeferYolcuByYolcuRefNo" />
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="yolcuBagajEkle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="bagajBilgileri" type="tns:uetdsSeferBagajBilgileriInput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsSeferBagajBilgileriInput">
+    <xs:sequence>
+      <xs:element name="yolcuTCKimlikPasaportNo" type="xs:string" />
+      <xs:element name="koltukNo" type="xs:string" />
+      <xs:element maxOccurs="unbounded" name="bagajBarkodNumaralari" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="yolcuBagajEkleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsGenelIslemSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="yolcuGelmeyenBildir">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+      <xs:element minOccurs="0" name="gelmeyenYolcu" type="tns:uetdsAriziYolcuGelmeyenInput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsAriziYolcuGelmeyenInput">
+    <xs:sequence>
+      <xs:element name="koltukNo" type="xs:string" />
+      <xs:element name="yolcuTCKimlikPasaportNo" type="xs:string" />
+      <xs:element minOccurs="0" name="aciklama" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="yolcuGelmeyenBildirResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsGenelIslemSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hesKoduBlokeEt">
+    <xs:sequence>
+      <xs:element name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element name="hesKodu" type="xs:string" />
+      <xs:element name="gecerlilikTarihi" type="xs:dateTime" />
+      <xs:element name="aciklama" type="xs:string" />
+      <xs:element name="firmaReferansNo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hesKoduBlokeEtResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsHesKodBlokeEtSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsHesKodBlokeEtSonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" name="blokeId" type="xs:string" />
+      <xs:element minOccurs="0" name="firmaReferansNo" type="xs:string" />
+      <xs:element minOccurs="0" name="hesKodu" type="xs:string" />
+      <xs:element minOccurs="0" name="hataMesaji" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ipTanimla">
+    <xs:sequence>
+      <xs:element name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element name="ipBaslangic" type="xs:string" />
+      <xs:element minOccurs="0" name="ipBitis" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ipTanimlaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsGenelIslemSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferGrupEkle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+      <xs:element minOccurs="0" name="seferGrupBilgileriInput" type="tns:uetdsAriziGrupBilgileriInput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsAriziGrupBilgileriInput">
+    <xs:sequence>
+      <xs:element name="grupAciklama" type="xs:string" />
+      <xs:element name="baslangicUlke" type="xs:string" />
+      <xs:element name="baslangicIl" type="xs:long" />
+      <xs:element name="baslangicIlce" type="xs:long" />
+      <xs:element minOccurs="0" name="baslangicYer" type="xs:string" />
+      <xs:element name="bitisUlke" type="xs:string" />
+      <xs:element name="bitisIl" type="xs:long" />
+      <xs:element name="bitisIlce" type="xs:long" />
+      <xs:element name="bitisYer" type="xs:string" />
+      <xs:element name="grupAdi" type="xs:string" />
+      <xs:element minOccurs="0" name="grupUcret" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferGrupEkleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsAriziGrupIslemSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="yetkiBelgesiKontrol">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="plaka" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="yetkiBelgesiKontrolResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsFirmaSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ipSil">
+    <xs:sequence>
+      <xs:element name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element name="ipId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ipSilResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsGenelIslemSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hesKoduBlokeKaldir">
+    <xs:sequence>
+      <xs:element name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element name="hesKodu" type="xs:string" />
+      <xs:element name="blokeId" type="xs:string" />
+      <xs:element name="firmaReferansNo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hesKoduBlokeKaldirResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsHesKodBlokeKaldirSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsHesKodBlokeKaldirSonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" name="hataMesaji" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferEkle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="ariziSeferBilgileriInput" type="tns:uetdsAriziSeferBilgileriInput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsAriziSeferBilgileriInput">
+    <xs:sequence>
+      <xs:element name="aracPlaka" type="xs:string" />
+      <xs:element minOccurs="0" name="seferAciklama" type="xs:string" />
+      <xs:element name="hareketTarihi" type="xs:dateTime" />
+      <xs:element name="hareketSaati" type="xs:string" />
+      <xs:element minOccurs="0" name="aracTelefonu" type="xs:string" />
+      <xs:element name="firmaSeferNo" type="xs:string" />
+      <xs:element name="seferBitisTarihi" type="xs:dateTime" />
+      <xs:element name="seferBitisSaati" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferEkleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsAriziSeferBildirSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsAriziSeferBildirSonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vizeOnBasvuruDetay">
+    <xs:sequence>
+      <xs:element name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element name="vizeOnBasvuruNo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vizeOnBasvuruDetayResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsVizeBasvuruDetaySonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsVizeBasvuruDetaySonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" name="basvuruDetay" type="tns:sinirVizeBasvuruDetay" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="basvuruSurucuListe" nillable="true" type="tns:sinirVizeBasvuruSurucuListe" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sinirVizeBasvuruDetay">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="basvuruNo" type="xs:string" />
+      <xs:element minOccurs="0" name="basvuruTarihi" type="xs:string" />
+      <xs:element minOccurs="0" name="durum" type="xs:string" />
+      <xs:element minOccurs="0" name="ulkeAdi" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sinirVizeBasvuruSurucuListe">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="adi" type="xs:string" />
+      <xs:element minOccurs="0" name="eklenmeTarihi" type="xs:string" />
+      <xs:element minOccurs="0" name="kimlikNo" type="xs:string" />
+      <xs:element minOccurs="0" name="pasaportNo" type="xs:string" />
+      <xs:element minOccurs="0" name="soyadi" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vizeOnBasvuruListele">
+    <xs:sequence>
+      <xs:element name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="surucuVizeOnBasvuruSorguInput" type="tns:surucuVizeOnBasvuruSorguInput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="surucuVizeOnBasvuruSorguInput">
+    <xs:sequence>
+      <xs:element name="ulkeKodu" type="xs:string" />
+      <xs:element name="tarihBaslangic" type="xs:string" />
+      <xs:element name="tarihBitis" type="xs:string" />
+      <xs:element name="surucuKimlikNo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vizeOnBasvuruListeleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsVizeBasvuruListeSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsVizeBasvuruListeSonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="basvuruListesi" nillable="true" type="tns:sinirVizeBasvuruListe" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sinirVizeBasvuruListe">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="aciklama" type="xs:string" />
+      <xs:element minOccurs="0" name="basvuruNo" type="xs:string" />
+      <xs:element minOccurs="0" name="basvuruTarihi" type="xs:string" />
+      <xs:element minOccurs="0" name="durum" type="xs:string" />
+      <xs:element minOccurs="0" name="ulkeAdi" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferAktif">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+      <xs:element minOccurs="0" name="aktifAciklama" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferAktifResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsGenelIslemSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vizeOnBasvuruSurucuEkle">
+    <xs:sequence>
+      <xs:element name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element name="vizeOnBasvuruNo" type="xs:string" />
+      <xs:element maxOccurs="unbounded" name="surucuBilgileriInput" type="tns:uetdsVizeSurucuBilgileri" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vizeOnBasvuruSurucuEkleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsVizeSurucuEkleSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsVizeSurucuEkleSonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="islemSonuc" nillable="true" type="tns:uetdsVizeSurucuSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferBildirimListele">
+    <xs:sequence>
+      <xs:element name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element name="seferListeleInput" type="tns:uetdsYtsAriziSeferListeleInput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsYtsAriziSeferListeleInput">
+    <xs:sequence>
+      <xs:element name="seferTarih1" type="xs:string" />
+      <xs:element name="seferTarih2" type="xs:string" />
+      <xs:element minOccurs="0" name="plaka" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferBildirimListeleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsAriziSeferAraSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsAriziSeferAraSonuc">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="seferListesi" nillable="true" type="tns:cstUetdsAriziSeferListesi" />
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cstUetdsAriziSeferListesi">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bildirimZamani" type="xs:string" />
+      <xs:element minOccurs="0" name="seferDurum" type="xs:string" />
+      <xs:element minOccurs="0" name="seferPlaka" type="xs:string" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferDetayCiktisiAl">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferDetayCiktisiAlResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsGenelPdfSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsGenelPdfSonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" name="sonucPdf" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferGrupIptal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+      <xs:element minOccurs="0" name="grupId" type="xs:long" />
+      <xs:element minOccurs="0" name="iptalAciklama" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferGrupIptalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsGenelIslemSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferIptal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+      <xs:element minOccurs="0" name="iptalAciklama" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferIptalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsGenelIslemSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="yolcuBagajIptal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+      <xs:element minOccurs="0" name="bagajBilgileri" type="tns:uetdsSeferBagajBilgileriInput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="yolcuBagajIptalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsGenelIslemSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="yolcuIptalUetdsYolcuRefNoIle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+      <xs:element minOccurs="0" name="uetdsYolcuReferansNo" type="xs:long" />
+      <xs:element minOccurs="0" name="iptalAciklama" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="yolcuIptalUetdsYolcuRefNoIleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsGenelIslemSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferGuncelle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="guncellenecekSeferReferansNo" type="xs:long" />
+      <xs:element minOccurs="0" name="ariziSeferBilgileriInput" type="tns:uetdsAriziSeferBilgileriInput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferGuncelleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsTarifeliSeferBildirSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uetdsTarifeliSeferBildirSonuc">
+    <xs:sequence>
+      <xs:element name="sonucKodu" type="xs:int" />
+      <xs:element minOccurs="0" name="sonucMesaji" type="xs:string" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferGrupGuncelle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="wsuser" type="tns:uetdsYtsUser" />
+      <xs:element minOccurs="0" name="uetdsSeferReferansNo" type="xs:long" />
+      <xs:element minOccurs="0" name="grupId" type="xs:long" />
+      <xs:element minOccurs="0" name="seferGrupBilgileriInput" type="tns:uetdsAriziGrupBilgileriInput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seferGrupGuncelleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:uetdsAriziGrupIslemSonuc" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

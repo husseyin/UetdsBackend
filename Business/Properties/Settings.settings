@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Business.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Business_UetdsEsyaServiceReference_UdhbUetdsEsyaWsService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://servis.turkiye.gov.tr/services/g2g/kdgm/test/uetdsesya</Value>
+    </Setting>
+    <Setting Name="Business_UetdsAriziTest_UdhbUetdsAriziService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://servis.turkiye.gov.tr/services/g2g/kdgm/test/uetdsarizi</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

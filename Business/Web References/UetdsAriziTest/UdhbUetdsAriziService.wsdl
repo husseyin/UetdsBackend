@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://uetds.unetws.udhb.gov.tr/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="UdhbUetdsAriziService" targetNamespace="http://uetds.unetws.udhb.gov.tr/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="https://servis.turkiye.gov.tr/ssg/wsdl/UdhbUetdsAriziService?serviceoid=17f00a04acf9ed54db7759881f25ceb4&amp;servdocoid=b9261b6e0d48add1fcbe0d6f46bb95f2" namespace="http://uetds.unetws.udhb.gov.tr/" />
+    </xsd:schema>
+  </types>
+  <message name="yolcuGelmeyenBildir">
+    <part name="parameters" element="tns:yolcuGelmeyenBildir" />
+  </message>
+  <message name="yolcuGelmeyenBildirResponse">
+    <part name="parameters" element="tns:yolcuGelmeyenBildirResponse" />
+  </message>
+  <message name="yolcuBildirimSorgula">
+    <part name="parameters" element="tns:yolcuBildirimSorgula" />
+  </message>
+  <message name="yolcuBildirimSorgulaResponse">
+    <part name="parameters" element="tns:yolcuBildirimSorgulaResponse" />
+  </message>
+  <message name="kullaniciKontrol">
+    <part name="parameters" element="tns:kullaniciKontrol" />
+  </message>
+  <message name="kullaniciKontrolResponse">
+    <part name="parameters" element="tns:kullaniciKontrolResponse" />
+  </message>
+  <message name="yolcuEkleCoklu">
+    <part name="parameters" element="tns:yolcuEkleCoklu" />
+  </message>
+  <message name="yolcuEkleCokluResponse">
+    <part name="parameters" element="tns:yolcuEkleCokluResponse" />
+  </message>
+  <message name="seferIptal">
+    <part name="parameters" element="tns:seferIptal" />
+  </message>
+  <message name="seferIptalResponse">
+    <part name="parameters" element="tns:seferIptalResponse" />
+  </message>
+  <message name="seferEkle">
+    <part name="parameters" element="tns:seferEkle" />
+  </message>
+  <message name="seferEkleResponse">
+    <part name="parameters" element="tns:seferEkleResponse" />
+  </message>
+  <message name="hesKoduKontrolEt">
+    <part name="parameters" element="tns:hesKoduKontrolEt" />
+  </message>
+  <message name="hesKoduKontrolEtResponse">
+    <part name="parameters" element="tns:hesKoduKontrolEtResponse" />
+  </message>
+  <message name="hesKoduKontrolEtPlus">
+    <part name="parameters" element="tns:hesKoduKontrolEtPlus" />
+  </message>
+  <message name="hesKoduKontrolEtPlusResponse">
+    <part name="parameters" element="tns:hesKoduKontrolEtPlusResponse" />
+  </message>
+  <message name="cokluHesKoduKontrolEt">
+    <part name="parameters" element="tns:cokluHesKoduKontrolEt" />
+  </message>
+  <message name="cokluHesKoduKontrolEtResponse">
+    <part name="parameters" element="tns:cokluHesKoduKontrolEtResponse" />
+  </message>
+  <message name="cokluHesKoduKontrolEtPlus">
+    <part name="parameters" element="tns:cokluHesKoduKontrolEtPlus" />
+  </message>
+  <message name="cokluHesKoduKontrolEtPlusResponse">
+    <part name="parameters" element="tns:cokluHesKoduKontrolEtPlusResponse" />
+  </message>
+  <message name="hesKoduBlokeEt">
+    <part name="parameters" element="tns:hesKoduBlokeEt" />
+  </message>
+  <message name="hesKoduBlokeEtResponse">
+    <part name="parameters" element="tns:hesKoduBlokeEtResponse" />
+  </message>
+  <message name="hesKoduBlokeKaldir">
+    <part name="parameters" element="tns:hesKoduBlokeKaldir" />
+  </message>
+  <message name="hesKoduBlokeKaldirResponse">
+    <part name="parameters" element="tns:hesKoduBlokeKaldirResponse" />
+  </message>
+  <message name="personelEkle">
+    <part name="parameters" element="tns:personelEkle" />
+  </message>
+  <message name="personelEkleResponse">
+    <part name="parameters" element="tns:personelEkleResponse" />
+  </message>
+  <message name="personelIptal">
+    <part name="parameters" element="tns:personelIptal" />
+  </message>
+  <message name="personelIptalResponse">
+    <part name="parameters" element="tns:personelIptalResponse" />
+  </message>
+  <message name="yolcuBagajEkle">
+    <part name="parameters" element="tns:yolcuBagajEkle" />
+  </message>
+  <message name="yolcuBagajEkleResponse">
+    <part name="parameters" element="tns:yolcuBagajEkleResponse" />
+  </message>
+  <message name="yolcuBagajIptal">
+    <part name="parameters" element="tns:yolcuBagajIptal" />
+  </message>
+  <message name="yolcuBagajIptalResponse">
+    <part name="parameters" element="tns:yolcuBagajIptalResponse" />
+  </message>
+  <message name="seferPlakaDegistir">
+    <part name="parameters" element="tns:seferPlakaDegistir" />
+  </message>
+  <message name="seferPlakaDegistirResponse">
+    <part name="parameters" element="tns:seferPlakaDegistirResponse" />
+  </message>
+  <message name="seferAktif">
+    <part name="parameters" element="tns:seferAktif" />
+  </message>
+  <message name="seferAktifResponse">
+    <part name="parameters" element="tns:seferAktifResponse" />
+  </message>
+  <message name="seferDetayCiktisiAl">
+    <part name="parameters" element="tns:seferDetayCiktisiAl" />
+  </message>
+  <message name="seferDetayCiktisiAlResponse">
+    <part name="parameters" element="tns:seferDetayCiktisiAlResponse" />
+  </message>
+  <message name="meslekiYeterlilikSorgula">
+    <part name="parameters" element="tns:meslekiYeterlilikSorgula" />
+  </message>
+  <message name="meslekiYeterlilikSorgulaResponse">
+    <part name="parameters" element="tns:meslekiYeterlilikSorgulaResponse" />
+  </message>
+  <message name="aracMuayeneSorgula">
+    <part name="parameters" element="tns:aracMuayeneSorgula" />
+  </message>
+  <message name="aracMuayeneSorgulaResponse">
+    <part name="parameters" element="tns:aracMuayeneSorgulaResponse" />
+  </message>
+  <message name="kimlikDogrulama">
+    <part name="parameters" element="tns:kimlikDogrulama" />
+  </message>
+  <message name="kimlikDogrulamaResponse">
+    <part name="parameters" element="tns:kimlikDogrulamaResponse" />
+  </message>
+  <message name="ipTanimla">
+    <part name="parameters" element="tns:ipTanimla" />
+  </message>
+  <message name="ipTanimlaResponse">
+    <part name="parameters" element="tns:ipTanimlaResponse" />
+  </message>
+  <message name="ipListele">
+    <part name="parameters" element="tns:ipListele" />
+  </message>
+  <message name="ipListeleResponse">
+    <part name="parameters" element="tns:ipListeleResponse" />
+  </message>
+  <message name="ipSil">
+    <part name="parameters" element="tns:ipSil" />
+  </message>
+  <message name="ipSilResponse">
+    <part name="parameters" element="tns:ipSilResponse" />
+  </message>
+  <message name="vizeOnBasvuru">
+    <part name="parameters" element="tns:vizeOnBasvuru" />
+  </message>
+  <message name="vizeOnBasvuruResponse">
+    <part name="parameters" element="tns:vizeOnBasvuruResponse" />
+  </message>
+  <message name="vizeOnBasvuruSurucuEkle">
+    <part name="parameters" element="tns:vizeOnBasvuruSurucuEkle" />
+  </message>
+  <message name="vizeOnBasvuruSurucuEkleResponse">
+    <part name="parameters" element="tns:vizeOnBasvuruSurucuEkleResponse" />
+  </message>
+  <message name="vizeOnBasvuruIptal">
+    <part name="parameters" element="tns:vizeOnBasvuruIptal" />
+  </message>
+  <message name="vizeOnBasvuruIptalResponse">
+    <part name="parameters" element="tns:vizeOnBasvuruIptalResponse" />
+  </message>
+  <message name="vizeOnBasvuruListele">
+    <part name="parameters" element="tns:vizeOnBasvuruListele" />
+  </message>
+  <message name="vizeOnBasvuruListeleResponse">
+    <part name="parameters" element="tns:vizeOnBasvuruListeleResponse" />
+  </message>
+  <message name="vizeOnBasvuruDetay">
+    <part name="parameters" element="tns:vizeOnBasvuruDetay" />
+  </message>
+  <message name="vizeOnBasvuruDetayResponse">
+    <part name="parameters" element="tns:vizeOnBasvuruDetayResponse" />
+  </message>
+  <message name="seferBildirimListele">
+    <part name="parameters" element="tns:seferBildirimListele" />
+  </message>
+  <message name="seferBildirimListeleResponse">
+    <part name="parameters" element="tns:seferBildirimListeleResponse" />
+  </message>
+  <message name="seyahatIzinKontrol">
+    <part name="parameters" element="tns:seyahatIzinKontrol" />
+  </message>
+  <message name="seyahatIzinKontrolResponse">
+    <part name="parameters" element="tns:seyahatIzinKontrolResponse" />
+  </message>
+  <message name="seferGuncelle">
+    <part name="parameters" element="tns:seferGuncelle" />
+  </message>
+  <message name="seferGuncelleResponse">
+    <part name="parameters" element="tns:seferGuncelleResponse" />
+  </message>
+  <message name="yolcuEkle">
+    <part name="parameters" element="tns:yolcuEkle" />
+  </message>
+  <message name="yolcuEkleResponse">
+    <part name="parameters" element="tns:yolcuEkleResponse" />
+  </message>
+  <message name="yolcuIptal">
+    <part name="parameters" element="tns:yolcuIptal" />
+  </message>
+  <message name="yolcuIptalResponse">
+    <part name="parameters" element="tns:yolcuIptalResponse" />
+  </message>
+  <message name="seferGrupEkle">
+    <part name="parameters" element="tns:seferGrupEkle" />
+  </message>
+  <message name="seferGrupEkleResponse">
+    <part name="parameters" element="tns:seferGrupEkleResponse" />
+  </message>
+  <message name="seferGrupGuncelle">
+    <part name="parameters" element="tns:seferGrupGuncelle" />
+  </message>
+  <message name="seferGrupGuncelleResponse">
+    <part name="parameters" element="tns:seferGrupGuncelleResponse" />
+  </message>
+  <message name="seferGrupIptal">
+    <part name="parameters" element="tns:seferGrupIptal" />
+  </message>
+  <message name="seferGrupIptalResponse">
+    <part name="parameters" element="tns:seferGrupIptalResponse" />
+  </message>
+  <message name="seferGrupListesi">
+    <part name="parameters" element="tns:seferGrupListesi" />
+  </message>
+  <message name="seferGrupListesiResponse">
+    <part name="parameters" element="tns:seferGrupListesiResponse" />
+  </message>
+  <message name="yolcuIptalUetdsYolcuRefNoIle">
+    <part name="parameters" element="tns:yolcuIptalUetdsYolcuRefNoIle" />
+  </message>
+  <message name="yolcuIptalUetdsYolcuRefNoIleResponse">
+    <part name="parameters" element="tns:yolcuIptalUetdsYolcuRefNoIleResponse" />
+  </message>
+  <message name="yetkiBelgesiKontrol">
+    <part name="parameters" element="tns:yetkiBelgesiKontrol" />
+  </message>
+  <message name="yetkiBelgesiKontrolResponse">
+    <part name="parameters" element="tns:yetkiBelgesiKontrolResponse" />
+  </message>
+  <message name="servisTest">
+    <part name="testMsj1" element="tns:testMsj1" />
+  </message>
+  <message name="servisTestResponse">
+    <part name="servisTestResponse" element="tns:servisTestResponse" />
+  </message>
+  <message name="bildirimOzeti">
+    <part name="parameters" element="tns:bildirimOzeti" />
+  </message>
+  <message name="bildirimOzetiResponse">
+    <part name="parameters" element="tns:bildirimOzetiResponse" />
+  </message>
+  <portType name="UdhbUetdsAriziService">
+    <operation name="yolcuGelmeyenBildir">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/yolcuGelmeyenBildir" message="tns:yolcuGelmeyenBildir" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/yolcuGelmeyenBildirResponse" message="tns:yolcuGelmeyenBildirResponse" />
+    </operation>
+    <operation name="yolcuBildirimSorgula">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/yolcuBildirimSorgula" message="tns:yolcuBildirimSorgula" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/yolcuBildirimSorgulaResponse" message="tns:yolcuBildirimSorgulaResponse" />
+    </operation>
+    <operation name="kullaniciKontrol">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/kullaniciKontrol" message="tns:kullaniciKontrol" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/kullaniciKontrolResponse" message="tns:kullaniciKontrolResponse" />
+    </operation>
+    <operation name="yolcuEkleCoklu">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/yolcuEkleCoklu" message="tns:yolcuEkleCoklu" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/yolcuEkleCokluResponse" message="tns:yolcuEkleCokluResponse" />
+    </operation>
+    <operation name="seferIptal">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferIptal" message="tns:seferIptal" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/seferIptalResponse" message="tns:seferIptalResponse" />
+    </operation>
+    <operation name="seferEkle">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferEkle" message="tns:seferEkle" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/seferEkleResponse" message="tns:seferEkleResponse" />
+    </operation>
+    <operation name="hesKoduKontrolEt">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/hesKoduKontrolEt" message="tns:hesKoduKontrolEt" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/hesKoduKontrolEtResponse" message="tns:hesKoduKontrolEtResponse" />
+    </operation>
+    <operation name="hesKoduKontrolEtPlus">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/hesKoduKontrolEtPlus" message="tns:hesKoduKontrolEtPlus" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/hesKoduKontrolEtPlusResponse" message="tns:hesKoduKontrolEtPlusResponse" />
+    </operation>
+    <operation name="cokluHesKoduKontrolEt">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/cokluHesKoduKontrolEt" message="tns:cokluHesKoduKontrolEt" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/cokluHesKoduKontrolEtResponse" message="tns:cokluHesKoduKontrolEtResponse" />
+    </operation>
+    <operation name="cokluHesKoduKontrolEtPlus">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/cokluHesKoduKontrolEtPlus" message="tns:cokluHesKoduKontrolEtPlus" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/cokluHesKoduKontrolEtPlusResponse" message="tns:cokluHesKoduKontrolEtPlusResponse" />
+    </operation>
+    <operation name="hesKoduBlokeEt">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/hesKoduBlokeEt" message="tns:hesKoduBlokeEt" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/hesKoduBlokeEtResponse" message="tns:hesKoduBlokeEtResponse" />
+    </operation>
+    <operation name="hesKoduBlokeKaldir">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/hesKoduBlokeKaldir" message="tns:hesKoduBlokeKaldir" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/hesKoduBlokeKaldirResponse" message="tns:hesKoduBlokeKaldirResponse" />
+    </operation>
+    <operation name="personelEkle">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/personelEkle" message="tns:personelEkle" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/personelEkleResponse" message="tns:personelEkleResponse" />
+    </operation>
+    <operation name="personelIptal">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/personelIptal" message="tns:personelIptal" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/personelIptalResponse" message="tns:personelIptalResponse" />
+    </operation>
+    <operation name="yolcuBagajEkle">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/yolcuBagajEkle" message="tns:yolcuBagajEkle" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/yolcuBagajEkleResponse" message="tns:yolcuBagajEkleResponse" />
+    </operation>
+    <operation name="yolcuBagajIptal">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/yolcuBagajIptal" message="tns:yolcuBagajIptal" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/yolcuBagajIptalResponse" message="tns:yolcuBagajIptalResponse" />
+    </operation>
+    <operation name="seferPlakaDegistir">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferPlakaDegistir" message="tns:seferPlakaDegistir" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/seferPlakaDegistirResponse" message="tns:seferPlakaDegistirResponse" />
+    </operation>
+    <operation name="seferAktif">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferAktif" message="tns:seferAktif" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/seferAktifResponse" message="tns:seferAktifResponse" />
+    </operation>
+    <operation name="seferDetayCiktisiAl">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/seferDetayCiktisiAlRequest" message="tns:seferDetayCiktisiAl" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/seferDetayCiktisiAlResponse" message="tns:seferDetayCiktisiAlResponse" />
+    </operation>
+    <operation name="meslekiYeterlilikSorgula">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsyts/meslekiYeterlilikSorgula" message="tns:meslekiYeterlilikSorgula" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/meslekiYeterlilikSorgulaResponse" message="tns:meslekiYeterlilikSorgulaResponse" />
+    </operation>
+    <operation name="aracMuayeneSorgula">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsyts/aracMuayeneSorgula" message="tns:aracMuayeneSorgula" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/aracMuayeneSorgulaResponse" message="tns:aracMuayeneSorgulaResponse" />
+    </operation>
+    <operation name="kimlikDogrulama">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/kimlikDogrulama" message="tns:kimlikDogrulama" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/kimlikDogrulamaResponse" message="tns:kimlikDogrulamaResponse" />
+    </operation>
+    <operation name="ipTanimla">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/ipTanimla" message="tns:ipTanimla" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/ipTanimlaResponse" message="tns:ipTanimlaResponse" />
+    </operation>
+    <operation name="ipListele">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/ipListele" message="tns:ipListele" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/ipListeleResponse" message="tns:ipListeleResponse" />
+    </operation>
+    <operation name="ipSil">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/ipSil" message="tns:ipSil" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/ipSilResponse" message="tns:ipSilResponse" />
+    </operation>
+    <operation name="vizeOnBasvuru">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/vizeOnBasvuru" message="tns:vizeOnBasvuru" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/vizeOnBasvuruResponse" message="tns:vizeOnBasvuruResponse" />
+    </operation>
+    <operation name="vizeOnBasvuruSurucuEkle">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/vizeOnBasvuruSurucuEkle" message="tns:vizeOnBasvuruSurucuEkle" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/vizeOnBasvuruSurucuEkleResponse" message="tns:vizeOnBasvuruSurucuEkleResponse" />
+    </operation>
+    <operation name="vizeOnBasvuruIptal">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/vizeOnBasvuruIptal" message="tns:vizeOnBasvuruIptal" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/vizeOnBasvuruIptalResponse" message="tns:vizeOnBasvuruIptalResponse" />
+    </operation>
+    <operation name="vizeOnBasvuruListele">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/vizeOnBasvuruListele" message="tns:vizeOnBasvuruListele" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/vizeOnBasvuruListeleResponse" message="tns:vizeOnBasvuruListeleResponse" />
+    </operation>
+    <operation name="vizeOnBasvuruDetay">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/vizeOnBasvuruDetay" message="tns:vizeOnBasvuruDetay" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/vizeOnBasvuruDetayResponse" message="tns:vizeOnBasvuruDetayResponse" />
+    </operation>
+    <operation name="seferBildirimListele">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferBildirimListele" message="tns:seferBildirimListele" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/seferBildirimListeleResponse" message="tns:seferBildirimListeleResponse" />
+    </operation>
+    <operation name="seyahatIzinKontrol">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsyts/seyahatIzinKontrol" message="tns:seyahatIzinKontrol" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/seyahatIzinKontrolResponse" message="tns:seyahatIzinKontrolResponse" />
+    </operation>
+    <operation name="seferGuncelle">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferGuncelle" message="tns:seferGuncelle" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/seferGuncelleResponse" message="tns:seferGuncelleResponse" />
+    </operation>
+    <operation name="yolcuEkle">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/yolcuEkle" message="tns:yolcuEkle" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/yolcuEkleResponse" message="tns:yolcuEkleResponse" />
+    </operation>
+    <operation name="yolcuIptal">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/yolcuIptal" message="tns:yolcuIptal" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/yolcuIptalResponse" message="tns:yolcuIptalResponse" />
+    </operation>
+    <operation name="seferGrupEkle">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferGrupEkle" message="tns:seferGrupEkle" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/seferGrupEkleResponse" message="tns:seferGrupEkleResponse" />
+    </operation>
+    <operation name="seferGrupGuncelle">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferGrupGuncelle" message="tns:seferGrupGuncelle" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/seferGrupGuncelleResponse" message="tns:seferGrupGuncelleResponse" />
+    </operation>
+    <operation name="seferGrupIptal">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferGrupIptal" message="tns:seferGrupIptal" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/seferGrupIptalResponse" message="tns:seferGrupIptalResponse" />
+    </operation>
+    <operation name="seferGrupListesi">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferGrupListesi" message="tns:seferGrupListesi" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/seferGrupListesiResponse" message="tns:seferGrupListesiResponse" />
+    </operation>
+    <operation name="yolcuIptalUetdsYolcuRefNoIle">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/yolcuIptalUetdsYolcuRefNoIle" message="tns:yolcuIptalUetdsYolcuRefNoIle" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/yolcuIptalUetdsYolcuRefNoIleResponse" message="tns:yolcuIptalUetdsYolcuRefNoIleResponse" />
+    </operation>
+    <operation name="yetkiBelgesiKontrol">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/yetkiBelgesiKontrol" message="tns:yetkiBelgesiKontrol" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/yetkiBelgesiKontrolResponse" message="tns:yetkiBelgesiKontrolResponse" />
+    </operation>
+    <operation name="servisTest">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/servisTest" message="tns:servisTest" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/servisTestResponse" message="tns:servisTestResponse" />
+    </operation>
+    <operation name="bildirimOzeti">
+      <input wsam:Action="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/bildirimOzeti" message="tns:bildirimOzeti" />
+      <output wsam:Action="http://uetds.unetws.udhb.gov.tr/UdhbUetdsAriziService/bildirimOzetiResponse" message="tns:bildirimOzetiResponse" />
+    </operation>
+  </portType>
+  <binding name="UdhbUetdsAriziServicePortBinding" type="tns:UdhbUetdsAriziService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="yolcuGelmeyenBildir">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/yolcuGelmeyenBildir" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="yolcuBildirimSorgula">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/yolcuBildirimSorgula" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="kullaniciKontrol">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/kullaniciKontrol" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="yolcuEkleCoklu">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/yolcuEkleCoklu" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="seferIptal">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferIptal" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="seferEkle">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferEkle" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="hesKoduKontrolEt">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/hesKoduKontrolEt" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="hesKoduKontrolEtPlus">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/hesKoduKontrolEtPlus" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="cokluHesKoduKontrolEt">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/cokluHesKoduKontrolEt" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="cokluHesKoduKontrolEtPlus">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/cokluHesKoduKontrolEtPlus" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="hesKoduBlokeEt">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/hesKoduBlokeEt" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="hesKoduBlokeKaldir">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/hesKoduBlokeKaldir" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="personelEkle">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/personelEkle" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="personelIptal">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/personelIptal" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="yolcuBagajEkle">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/yolcuBagajEkle" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="yolcuBagajIptal">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/yolcuBagajIptal" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="seferPlakaDegistir">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferPlakaDegistir" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="seferAktif">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferAktif" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="seferDetayCiktisiAl">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="meslekiYeterlilikSorgula">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsyts/meslekiYeterlilikSorgula" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="aracMuayeneSorgula">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsyts/aracMuayeneSorgula" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="kimlikDogrulama">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/kimlikDogrulama" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ipTanimla">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/ipTanimla" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ipListele">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/ipListele" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ipSil">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/ipSil" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="vizeOnBasvuru">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/vizeOnBasvuru" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="vizeOnBasvuruSurucuEkle">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/vizeOnBasvuruSurucuEkle" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="vizeOnBasvuruIptal">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/vizeOnBasvuruIptal" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="vizeOnBasvuruListele">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/vizeOnBasvuruListele" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="vizeOnBasvuruDetay">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/vizeOnBasvuruDetay" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="seferBildirimListele">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferBildirimListele" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="seyahatIzinKontrol">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsyts/seyahatIzinKontrol" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="seferGuncelle">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferGuncelle" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="yolcuEkle">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/yolcuEkle" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="yolcuIptal">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/yolcuIptal" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="seferGrupEkle">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferGrupEkle" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="seferGrupGuncelle">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferGrupGuncelle" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="seferGrupIptal">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferGrupIptal" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="seferGrupListesi">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/seferGrupListesi" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="yolcuIptalUetdsYolcuRefNoIle">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/yolcuIptalUetdsYolcuRefNoIle" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="yetkiBelgesiKontrol">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/yetkiBelgesiKontrol" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="servisTest">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/servisTest" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="bildirimOzeti">
+      <soap:operation soapAction="http://uetds.unetws.udhb.gov.tr/uetdsytsarizi/bildirimOzeti" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="UdhbUetdsAriziService">
+    <port name="UdhbUetdsAriziServicePort" binding="tns:UdhbUetdsAriziServicePortBinding">
+      <soap:address location="https://servis.turkiye.gov.tr/services/g2g/kdgm/test/uetdsarizi" />
+    </port>
+  </service>
+</definitions>
