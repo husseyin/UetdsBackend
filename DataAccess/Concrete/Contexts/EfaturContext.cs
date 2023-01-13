@@ -11,7 +11,7 @@ namespace DataAccess.Concrete.Contexts
 {
     public class EfaturContext : DbContext
     {
-        public EfaturContext() : base("Data Source=192.168.2.5;Initial Catalog=EFATUR;User ID=sa;Password=Ef*tR!1433 ;Pooling=false;MultipleActiveResultSets=True;")
+        public EfaturContext() : base("Uetds")
         {
 
         }
